@@ -1,8 +1,8 @@
 import logo from '../assets/worm-logo.png';
 
-function AppHeader() {
+export function Header() {
     return (
-      <header className="bg-gray-800 text-4xl font-extrabold text-white p-5 m-5 flex items-center justify-between space-x-10 rounded-2xl ">
+      <header className="bg-gray-800 text-4xl font-extrabold text-white p-5 flex items-center justify-between space-x-10 rounded-2xl ">
         <div className='flex items-center gap-4'>
           <img src={logo} alt="worm" />
           <p>Min<span className='text-green-500'>h</span>oca TDA<span className="text-green-500 text-sm">H</span> </p>
@@ -15,9 +15,6 @@ function AppHeader() {
             Log In
           </button>
         </div>
-
       </header>
     )
 }
-
-export default AppHeader;
